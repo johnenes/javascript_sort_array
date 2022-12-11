@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sorting Array</title>
+    </head>
+
+    <body>
+            <script lang="javascript" type="text/javascript"> 
+
+            var num1 = new Array(7,2,5,8,4,6,4);//array declearation 
+            var i, j , temp; // counters i j and temp for storing value  
+
+
+            document.write("</br> </br> sorting...</br>")
+            for(i= 0 ; i < 6; i++){
+                document.write(num1[i] + "</br>");
+                //print the initial value of the number 
+
+            }
+
+            
+
+            for(i=0;i<7; i++){
+                 
+                for(j=0; j < 5; j++){
+                    //run a loop n(n-1)
+                    if(num1[j] > num1[j +1 ]){
+                        //swaping the index of the value
+                        temp = num1[j];
+                        num1[j] = num1[j +1];
+                        num1[j + 1] = temp;
+
+                    }
+                }
+
+            }
+            document.write("</br> </br> sorted values...</br>");
+            for(i=0; i<6; i++){
+                document.write(num1[i] + "</br>")
+            }
+
+
+
+            //list of variable 
+
+
+             
+
+            </script>
+    </body>
+</html>
